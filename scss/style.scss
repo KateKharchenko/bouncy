@@ -33,6 +33,7 @@ html, body {
 	padding-bottom: 70px;
 	background: url(../img/intro.png) no-repeat;
 	overflow: hidden;
+	background-size: cover;
 }
 
 p {
@@ -341,7 +342,7 @@ h1 {
 	}
 }
 
-.sicoals {
+.socials {
 	display: inline-block;
 }
 
@@ -350,33 +351,32 @@ h1 {
 	height: 30px;
 	display: inline-block;
 	margin-right: 10px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	// background-size: cover;
+	// -webkit-background-size: cover;
+	//    -moz-background-size: cover;
+	//      -o-background-size: cover;
+	   
 	&:hover {
 		opacity: 0.5;
 	}
-	&__fb {
-		background: url(../img/facebook.png) center no-repeat;
-		border-radius: 50%;
-		background-size: cover;
+	&--fb {
+		background-image: url(../img/facebook.png);
 	}
-	&__tw {
-		background: url(../img/twitter.png) center no-repeat;
-		border-radius: 50%;
-		background-size: cover;
+	&--tw {
+		background-image: url(../img/twitter.png);
 	}
-	&__in {
-		background: url(../img/linkedin.png) center no-repeat;
-		border-radius: 50%;
-		background-size: cover;
+	&--in {
+		background-image: url(../img/linkedin.png);
 	}
-	&__inst {
-		background: url(../img/instagram.png) center no-repeat;
-		border-radius: 50%;
-		background-size: cover;
+	&--inst {
+		background-image: url(../img/instagram.png);
 	}
-	&__vim {
-		background: url(../img/vimeo.png) center no-repeat;
-		border-radius: 50%;
-		background-size: cover;
+	&--vim {
+		background-image: url(../img/vimeo.png);
 		margin-right: 35px;
 	}
 }

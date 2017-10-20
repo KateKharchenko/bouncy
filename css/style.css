@@ -18,7 +18,8 @@ html, body {
   padding-top: 50px;
   padding-bottom: 70px;
   background: url(../img/intro.png) no-repeat;
-  overflow: hidden; }
+  overflow: hidden;
+  background-size: cover; }
 
 p {
   font-family: "Open Sans", Arial, sans-serif;
@@ -267,36 +268,30 @@ h1 {
     font-weight: 300;
     margin-bottom: 30px; }
 
-.sicoals {
+.socials {
   display: inline-block; }
 
 .social {
   width: 30px;
   height: 30px;
   display: inline-block;
-  margin-right: 10px; }
+  margin-right: 10px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
   .social:hover {
     opacity: 0.5; }
-  .social__fb {
-    background: url(../img/facebook.png) center no-repeat;
-    border-radius: 50%;
-    background-size: cover; }
-  .social__tw {
-    background: url(../img/twitter.png) center no-repeat;
-    border-radius: 50%;
-    background-size: cover; }
-  .social__in {
-    background: url(../img/linkedin.png) center no-repeat;
-    border-radius: 50%;
-    background-size: cover; }
-  .social__inst {
-    background: url(../img/instagram.png) center no-repeat;
-    border-radius: 50%;
-    background-size: cover; }
-  .social__vim {
-    background: url(../img/vimeo.png) center no-repeat;
-    border-radius: 50%;
-    background-size: cover;
+  .social--fb {
+    background-image: url(../img/facebook.png); }
+  .social--tw {
+    background-image: url(../img/twitter.png); }
+  .social--in {
+    background-image: url(../img/linkedin.png); }
+  .social--inst {
+    background-image: url(../img/instagram.png); }
+  .social--vim {
+    background-image: url(../img/vimeo.png);
     margin-right: 35px; }
 
 .slick-dots {

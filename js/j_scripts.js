@@ -11,7 +11,7 @@ function initMap() {
         var marker = new google.maps.Marker({
           position: uluru,
           map: map,
-          icon: "img/favicon.png"
+          icon: "../img/favicon.png"
         });
       }
       
@@ -45,3 +45,24 @@ $('.tags li a').on( 'click', function(e) {
 	console.log(gallery);
 });
 
+$(".anchor").click(function(e) {
+    		e.preventDefault();
+    		// $('.header-nav').removeClass('open');
+    		$('.header-toggler input').prop('checked',false).trigger('change');
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top + "px"
+      }, {
+         duration: 1000,
+         easing: "swing"
+      });
+      
+   });
+
+// $(document).ready(function(){
+// 	$("body").on("click","a", function (event) {
+//  	event.preventDefault();
+// 	var id  = $(this).attr('href'),
+// 	top = $(id).offset().top;
+// 	$('body,html').animate({scrollTop: top}, 6500);
+//  	});
+// });
